@@ -1,10 +1,9 @@
 package com.klasa3p.szkola;
 
-public class Student extends Person {
-    private int nrOfStudent;
-
+public class Student extends Person implements Orderly {
     //    domyslnie 0
     public static int countOfStudents;
+    private int nrOfStudent;
 
     public Student(String name, int age) {
 //        wywolanie konstruktora klasy bazowej(rodzica)
@@ -26,5 +25,10 @@ public class Student extends Person {
                 " imie=" + getName() +
                 " wiek=" + getAge() +
                 " nrOfStudent=" + nrOfStudent;
+    }
+
+    @Override
+    public void doDuty() {
+        System.out.println("Czysta tablica");
     }
 }

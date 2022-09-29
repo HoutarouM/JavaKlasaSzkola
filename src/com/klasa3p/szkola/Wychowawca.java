@@ -1,7 +1,7 @@
 package com.klasa3p.szkola;
 
 public final class Wychowawca extends Teacher {
-//    TODO: translate
+//    ToDo: translate
 //    TODO: pole okreslajace jakiej klasy dotyczy
 
 

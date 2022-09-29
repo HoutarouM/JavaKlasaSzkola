@@ -14,7 +14,12 @@ public class Student extends Person {
         this.nrOfStudent = countOfStudents;
     }
 
-//    override nadpisanie istniejacej metody
+    public Student(int nrOfStudent, String zmienna) {
+        setName(zmienna);
+        this.nrOfStudent = nrOfStudent;
+    }
+
+    //    override nadpisanie istniejacej metody
     @Override
     public String toString() {
         return "Student " +
